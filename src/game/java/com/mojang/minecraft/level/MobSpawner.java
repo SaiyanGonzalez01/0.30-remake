@@ -91,6 +91,11 @@ public final class MobSpawner {
                         var21 = new Sheep(this.level, var15, var16, var17);
                      }
 
+                     if(var6 == 6) {
+                        var21 = new Pigman(this.level, var15, var16, var17);
+
+                     }
+
                      if(this.level.isFree(((Mob)var21).bb)) {
                         ++var4;
                         this.level.addEntity((Entity)var21);
