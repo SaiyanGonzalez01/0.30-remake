@@ -10,6 +10,7 @@ public final class GameOverScreen extends GuiScreen {
       this.buttons.clear();
       this.buttons.add(new Button(1, this.width / 2 - 100, this.height / 4 + 72, "Generate new level..."));
       this.buttons.add(new Button(2, this.width / 2 - 100, this.height / 4 + 96, "Load level.."));
+       this.buttons.add(new Button(0, this.width / 2 - 100, this.height / 4 + 96, "Options.."));
       ((Button)this.buttons.get(1)).active = false;
       LevelUtils.save();
    }
